@@ -472,15 +472,30 @@ header.scrolled {
     flex-direction: column;
 }
 
-.project-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.5s ease;
+.project-visual {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 242, 254, 0.05), rgba(79, 172, 254, 0.02));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
 }
 
-.project-card:hover .project-image {
-    transform: scale(1.05);
+.project-visual i {
+    font-size: 4rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-visual {
+    background: linear-gradient(135deg, rgba(0, 242, 254, 0.1), rgba(79, 172, 254, 0.05));
+}
+
+.project-card:hover .project-visual i {
+    transform: scale(1.15) translateY(-5px);
 }
 
 .project-info {
