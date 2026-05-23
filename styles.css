@@ -212,6 +212,26 @@ ul {
     width: 100%;
 }
 
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 242, 254, 0.1);
+    color: var(--accent-1);
+    border: 1px solid var(--accent-1);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
+
+.lang-btn:hover {
+    background: var(--accent-gradient);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+    transform: translateY(-2px);
+}
+
 /* =========================================
    Navbar
    ========================================= */

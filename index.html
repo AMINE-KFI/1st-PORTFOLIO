@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Étudiant CS & Full-Stack Developer</title>
-    <meta name="description" content="Portfolio professionnel d'un étudiant en Computer Science et développeur Full-Stack. Découvrez mes projets, compétences et expériences.">
+    <title>Portfolio | Amine Koufi</title>
+    <meta name="description" content="Portfolio professionnel d'Amine Koufi, étudiant à 3iL et développeur Full-Stack.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -21,10 +21,11 @@
         <nav class="navbar">
             <a href="#" class="logo">Dev<span>Portfolio</span></a>
             <div class="nav-links">
-                <a href="#about">À Propos</a>
-                <a href="#skills">Compétences</a>
-                <a href="#projects">Projets</a>
-                <a href="#contact" class="btn btn-outline">Contact</a>
+                <a href="#about" data-i18n="nav_about">À Propos</a>
+                <a href="#skills" data-i18n="nav_skills">Compétences</a>
+                <a href="#projects" data-i18n="nav_projects">Projets</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="nav_contact">Contact</a>
+                <button id="lang-toggle" class="btn lang-btn"><i class="fas fa-globe"></i> <span id="lang-text">EN</span></button>
             </div>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -36,17 +37,17 @@
         <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="hero-content fade-in">
-                <h2 class="greeting">Bonjour, je suis</h2>
+                <h2 class="greeting" data-i18n="hero_greeting">Bonjour, je suis</h2>
                 <h1 class="name">Amine Koufi</h1>
-                <h3 class="title">
+                <h3 class="title" data-i18n="hero_title">
                     <span class="gradient-text">Étudiant à 3iL</span> & <span class="gradient-text">Développeur Full-Stack</span>
                 </h3>
-                <p class="description">
+                <p class="description" data-i18n="hero_desc">
                     Passionné par la conception d'applications web modernes et les bases de données. J'allie une solide expertise technique à une vision commerciale pour créer des solutions numériques performantes et évolutives.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                    <a href="https://github.com" target="_blank" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">Voir mes projets</a>
+                    <a href="https://github.com/AMINE-KFI/1st-PORTFOLIO.git" target="_blank" class="btn btn-icon"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com" target="_blank" class="btn btn-icon"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
@@ -73,21 +74,21 @@
 
         <!-- About Section -->
         <section id="about" class="about section">
-            <h2 class="section-title">À Propos de moi</h2>
+            <h2 class="section-title" data-i18n="about_title">À Propos de moi</h2>
             <div class="about-content glass-card reveal">
                 <div class="about-text">
-                    <p>
+                    <p data-i18n="about_desc">
                         Actuellement en <strong>Bachelor Développement Full-Stack à 3iL</strong> en Algérie, je possède déjà une forte expertise en Bases de Données (TS, BTS, AEC). Mon parcours est atypique : en tant que Délégué Commercial chez EURL KATAMINE, j'ai développé un excellent sens de la communication et de la gestion de projet, ce qui me permet de comprendre aussi bien les enjeux techniques que business d'un produit.
                     </p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
                         <span class="stat-number">3+</span>
-                        <span class="stat-label">Diplômes en IT</span>
+                        <span class="stat-label" data-i18n="about_stat1">Diplômes en IT</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">2+</span>
-                        <span class="stat-label">Projets d'Entreprise</span>
+                        <span class="stat-label" data-i18n="about_stat2">Projets d'Entreprise</span>
                     </div>
                 </div>
             </div>
@@ -95,11 +96,11 @@
 
         <!-- Skills Section -->
         <section id="skills" class="skills section">
-            <h2 class="section-title">Mes Compétences</h2>
+            <h2 class="section-title" data-i18n="skills_title">Mes Compétences</h2>
             <div class="skills-grid">
                 <div class="skill-card glass-card reveal delay-1">
                     <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Frontend</h3>
+                    <h3 data-i18n="skills_front">Frontend</h3>
                     <ul class="skill-list">
                         <li>HTML5 / CSS3</li>
                         <li>JavaScript / TypeScript</li>
@@ -108,7 +109,7 @@
                 </div>
                 <div class="skill-card glass-card reveal delay-2">
                     <div class="skill-icon"><i class="fas fa-server"></i></div>
-                    <h3>Backend & Mobile</h3>
+                    <h3 data-i18n="skills_back">Backend & Mobile</h3>
                     <ul class="skill-list">
                         <li>Node.js</li>
                         <li>Laravel</li>
@@ -117,9 +118,9 @@
                 </div>
                 <div class="skill-card glass-card reveal delay-3">
                     <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3>Bases de données & Outils</h3>
+                    <h3 data-i18n="skills_db">Bases de données & Outils</h3>
                     <ul class="skill-list">
-                        <li>Conception & Admin BDD</li>
+                        <li data-i18n="skills_db_1">Conception & Admin BDD</li>
                         <li>Git / GitHub</li>
                         <li>Docker / Linux (Ubuntu)</li>
                     </ul>
@@ -129,7 +130,7 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects section">
-            <h2 class="section-title">Projets Récents</h2>
+            <h2 class="section-title" data-i18n="projects_title">Projets Récents</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card glass-card reveal">
@@ -138,11 +139,11 @@
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span>Système d'Information</span>
-                            <span>Base de données</span>
+                            <span data-i18n="proj1_tag1">Système d'Information</span>
+                            <span data-i18n="proj1_tag2">Base de données</span>
                         </div>
                         <h3>GESA - Sonatrach</h3>
-                        <p>Développement du système de gestion des stagiaires sur mesure pour l'entreprise Sonatrach.</p>
+                        <p data-i18n="proj1_desc">Développement du système de gestion des stagiaires sur mesure pour l'entreprise Sonatrach.</p>
                         <div class="project-links">
                             <a href="#" class="btn-text">Live Demo <i class="fas fa-arrow-right"></i></a>
                             <a href="#" class="btn-text"><i class="fab fa-github"></i> Code</a>
@@ -156,11 +157,11 @@
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span>Full-Stack</span>
-                            <span>Rebranding</span>
+                            <span data-i18n="proj2_tag1">Full-Stack</span>
+                            <span data-i18n="proj2_tag2">Rebranding</span>
                         </div>
                         <h3>Modernisation EURL KATAMINE</h3>
-                        <p>Gestion de la refonte de l'identité visuelle et modernisation de l'architecture du site web de l'entreprise.</p>
+                        <p data-i18n="proj2_desc">Gestion de la refonte de l'identité visuelle et modernisation de l'architecture du site web de l'entreprise.</p>
                         <div class="project-links">
                             <a href="#" class="btn-text">Live Demo <i class="fas fa-arrow-right"></i></a>
                             <a href="#" class="btn-text"><i class="fab fa-github"></i> Code</a>
@@ -174,11 +175,11 @@
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span>Base de données</span>
-                            <span>Soutenance</span>
+                            <span data-i18n="proj3_tag1">Base de données</span>
+                            <span data-i18n="proj3_tag2">Soutenance</span>
                         </div>
-                        <h3>Projet de Fin d'Études (Avril 2026)</h3>
-                        <p>Conception et développement d'une solution orientée base de données pour la validation du diplôme de Technicien Supérieur.</p>
+                        <h3 data-i18n="proj3_title">Projet de Fin d'Études (Avril 2026)</h3>
+                        <p data-i18n="proj3_desc">Conception et développement d'une solution orientée base de données pour la validation du diplôme de Technicien Supérieur.</p>
                         <div class="project-links">
                             <a href="#" class="btn-text">Live Demo <i class="fas fa-arrow-right"></i></a>
                             <a href="#" class="btn-text"><i class="fab fa-github"></i> Code</a>
@@ -192,8 +193,8 @@
         <section id="contact" class="contact section">
             <div class="contact-container glass-card reveal">
                 <div class="contact-info">
-                    <h2 class="section-title" style="text-align: left;">Travaillons ensemble</h2>
-                    <p>Vous avez une idée de projet ou une opportunité d'emploi ? N'hésitez pas à me contacter.</p>
+                    <h2 class="section-title" style="text-align: left;" data-i18n="contact_title">Travaillons ensemble</h2>
+                    <p data-i18n="contact_desc">Vous avez une idée de projet ou une opportunité d'emploi ? N'hésitez pas à me contacter.</p>
                     <div class="contact-methods">
                         <div class="method">
                             <i class="fas fa-envelope"></i>
@@ -201,21 +202,21 @@
                         </div>
                         <div class="method">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Alger, Algérie (Draria) ou Remote</span>
+                            <span data-i18n="contact_loc">Alger, Algérie (Draria) ou Remote</span>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Votre Nom" required>
+                        <input type="text" placeholder="Votre Nom" data-i18n-placeholder="form_name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Votre Email" required>
+                        <input type="email" placeholder="Votre Email" data-i18n-placeholder="form_email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Votre Message" rows="5" required></textarea>
+                        <textarea placeholder="Votre Message" data-i18n-placeholder="form_msg" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+                    <button type="submit" class="btn btn-primary w-100" data-i18n="form_btn">Envoyer le message</button>
                 </form>
             </div>
         </section>
@@ -225,11 +226,11 @@
         <div class="footer-content">
             <div class="footer-logo">Dev<span>Portfolio</span></div>
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/AMINE-KFI/1st-PORTFOLIO.git"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <p>&copy; <span id="year"></span> Amine Koufi. Tous droits réservés.</p>
+            <p>&copy; <span id="year"></span> <span data-i18n="footer_rights">Amine Koufi. Tous droits réservés.</span></p>
         </div>
     </footer>
 
