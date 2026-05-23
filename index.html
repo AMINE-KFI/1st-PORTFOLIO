@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Étudiant CS & Full-Stack Developer</title>
+    <meta name="description" content="Portfolio professionnel d'un étudiant en Computer Science et développeur Full-Stack. Découvrez mes projets, compétences et expériences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Dev<span>Portfolio</span></a>
+            <div class="nav-links">
+                <a href="#about">À Propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact" class="btn btn-outline">Contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content fade-in">
+                <h2 class="greeting">Bonjour, je suis</h2>
+                <h1 class="name">Amine Koufi</h1>
+                <h3 class="title">
+                    <span class="gradient-text">Étudiant à 3iL</span> & <span class="gradient-text">Développeur Full-Stack</span>
+                </h3>
+                <p class="description">
+                    Passionné par la conception d'applications web modernes et les bases de données. J'allie une solide expertise technique à une vision commerciale pour créer des solutions numériques performantes et évolutives.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="https://github.com" target="_blank" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="btn btn-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="hero-image fade-in delay-1">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="keyword">const</span> developer = {
+  <span class="property">name</span>: <span class="string">"Amine Koufi"</span>,
+  <span class="property">role</span>: <span class="string">"Full-Stack Dev & DB Specialist"</span>,
+  <span class="property">passions</span>: [<span class="string">"Coding"</span>, <span class="string">"Hiking"</span>, <span class="string">"Languages"</span>],
+  <span class="function">buildAwesomeThings</span>: <span class="keyword">function</span>() {
+    <span class="keyword">return</span> <span class="string">"Exceeding Client Expectations"</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title">À Propos de moi</h2>
+            <div class="about-content glass-card reveal">
+                <div class="about-text">
+                    <p>
+                        Actuellement en <strong>Bachelor Développement Full-Stack à 3iL</strong> en Algérie, je possède déjà une forte expertise en Bases de Données (TS, BTS, AEC). Mon parcours est atypique : en tant que Délégué Commercial chez EURL KATAMINE, j'ai développé un excellent sens de la communication et de la gestion de projet, ce qui me permet de comprendre aussi bien les enjeux techniques que business d'un produit.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Diplômes en IT</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Projets d'Entreprise</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h2 class="section-title">Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card reveal delay-1">
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript / TypeScript</li>
+                        <li>React / Next.js</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass-card reveal delay-2">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend & Mobile</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Laravel</li>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass-card reveal delay-3">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Bases de données & Outils</h3>
+                    <ul class="skill-list">
+                        <li>Conception & Admin BDD</li>
+                        <li>Git / GitHub</li>
+                        <li>Docker / Linux (Ubuntu)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title">Projets Récents</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Système d'Information</span>
+                            <span>Base de données</span>
+                        </div>
+                        <h3>GESA - Sonatrach</h3>
+                        <p>Développement du système de gestion des stagiaires sur mesure pour l'entreprise Sonatrach.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-text">Live Demo <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-text"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card reveal delay-1">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2088&auto=format&fit=crop');"></div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Full-Stack</span>
+                            <span>Rebranding</span>
+                        </div>
+                        <h3>Modernisation EURL KATAMINE</h3>
+                        <p>Gestion de la refonte de l'identité visuelle et modernisation de l'architecture du site web de l'entreprise.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-text">Live Demo <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-text"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card reveal delay-2">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Base de données</span>
+                            <span>Soutenance</span>
+                        </div>
+                        <h3>Projet de Fin d'Études (Avril 2026)</h3>
+                        <p>Conception et développement d'une solution orientée base de données pour la validation du diplôme de Technicien Supérieur.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-text">Live Demo <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-text"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="contact-container glass-card reveal">
+                <div class="contact-info">
+                    <h2 class="section-title" style="text-align: left;">Travaillons ensemble</h2>
+                    <p>Vous avez une idée de projet ou une opportunité d'emploi ? N'hésitez pas à me contacter.</p>
+                    <div class="contact-methods">
+                        <div class="method">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@aminekoufi.com</span>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Alger, Algérie (Draria) ou Remote</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre Nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Dev<span>Portfolio</span></div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> Amine Koufi. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
